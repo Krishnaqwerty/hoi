@@ -8,7 +8,7 @@ from flask import Flask, jsonify, request, send_file, send_from_directory
 # 🔥 FILL THIS OUT FIRST! 🔥
 # 🔥 GET YOUR GEMINI API KEY AT 🔥
 # 🔥 https://g.co/ai/idxGetGeminiKey 🔥
-os.environ["GOOGLE_API_KEY"] = "TODO"; 
+os.environ["AIzaSyBbUeq1Sr2K-o3bZynXFJ8CMDoJ5nR6mP8"] = "TODO"; 
 
 app = Flask(__name__)
 
@@ -21,7 +21,7 @@ def index():
 @app.route("/api/generate", methods=["POST"])
 def generate_api():
     if request.method == "POST":
-        if os.environ["GOOGLE_API_KEY"] == 'TODO':
+        if os.environ["AIzaSyBbUeq1Sr2K-o3bZynXFJ8CMDoJ5nR6mP8"] == 'TODO':
             return jsonify({ "error": '''
                 To get started, get an API key at
                 https://g.co/ai/idxGetGeminiKey and enter it in
